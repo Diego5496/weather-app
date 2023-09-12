@@ -1,15 +1,18 @@
-export interface WeatherDatas{
-  coord:{
+export interface WeatherDatas {
+  coord: {
     lon: number;
-    lat: number
+    lat: number;
   };
-  weather:[{
-    id: number;
-    main: string;
-    description: string;
-    icon :string;
-  }
+
+  weather: [
+    {
+      id: number;
+      main: string;
+      description: string;
+      icon: string;
+    }
   ];
+
   base: string;
   main: {
     temp: number;
@@ -20,22 +23,22 @@ export interface WeatherDatas{
     humidity: number;
   };
   visibility: number;
-  wind:{
+  wind: {
     speed: number;
     deg: number;
   };
-  clounds:{
-    all : number;
+  clouds: {
+    all: number;
   };
-  dt:number;
-  sys:{
+  dt: number;
+  sys: {
     type: number;
-    id:number;
-    country:string;
-    sunrise:number;
+    id: number;
+    country: string;
+    sunrise: number;
     sunset: number;
   };
-  timezone :number;
+  timezone: number;
   id: number;
   name: string;
   cod: number;

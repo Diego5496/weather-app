@@ -4,19 +4,18 @@ import { WeatherHomeComponent } from './modules/wheater/page/weather-home/weathe
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'weather',
-    pathMatch: 'full'
+    path: '',
+    redirectTo: 'weather',
+    pathMatch: 'full',
   },
   {
-    path:'weather',
+    path: 'weather',
     component: WeatherHomeComponent,
-
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
