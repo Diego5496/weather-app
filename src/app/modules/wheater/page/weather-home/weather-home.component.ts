@@ -15,9 +15,9 @@ export class WeatherHomeComponent implements OnInit{
 
   }
   ngOnInit(): void {
-    this.getWheatherDatas(this.initialCityName);
+    this.getWeatherDatas(this.initialCityName);
   }
-  getWheatherDatas(cityName : string): void{
+  getWeatherDatas(cityName : string): void{
     this.weatherService.getWeatherDatas(cityName)
     .subscribe({
       next:(response) =>{
